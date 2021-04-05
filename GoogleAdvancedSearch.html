@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Advanced Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .grid {
+          background-color: transparent;
+          display: grid;
+          padding: 20px;
+          grid-column-gap: 20px;
+          grid-row-gap: 10px;
+          grid-template-columns: auto auto 200px;
+        }
+
+        .grid-item {
+          background-color: transparent;
+          font-size: 16px;
+          padding: 30px;
+          text-align: left;
+        }
+
+        .grid-item0 {
+          background-color: transparent;
+          font-size: 14px;
+          padding: 5px;
+          text-align: right;
+          color: #5F6368;
+          font-family: arial,sans-serif;
+        }
+
+        .control {
+          width: 482px;
+          height: 44px;
+          border: 1px solid #f2f2f2;
+          border-radius: 8px;
+          font-family: arial,sans-serif;
+          font-size: 14px;
+          padding: 5px;
+        }
+
+        #submit {
+          background-color: #4d90fe;
+          border: 1px solid #f2f2f2;
+          border-radius: 4px;
+          color: white;
+          font-family: arial,sans-serif;
+          font-size: 14px;
+          margin: 11px 4px;
+          padding: 0 16px;
+          line-height: 27px;
+          height: 36px;
+          min-width: 54px;
+          text-align: center;
+        }
+
+        #submit:hover {
+          border-radius: 4px;
+          border-color: #5F6368;
+        }
+
+        .label {
+          font-family: arial,sans-serif;
+          font-size: 14px;
+        }
+
+     </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="grid-item"></div>
+      <div class="grid-item">
+        <form action="https://www.google.com/advanced_search">
+                <label for="as_q" class="label">all these words:</label>
+                <input type="text" class="control" id="as_q" name="as_q"><br></br>
+
+                <label for="as_epq" class="label">this exact word or phrase:</label>
+                <input type="text" class="control" id="as_epq" name="as_epq"><br></br>
+
+                <label for="as_oq" class="label">any of these words:</label>
+                <input type="text" class="control" id="as_oq" name="as_oq"><br></br>
+
+                <label for="as_eq" class="label">none of these words:</label>
+                <input type="text" class="control" id="as_eq" name="as_eq"><br></br>
+
+                <button type="submit" id="submit">Advanced Search</button>
+        </form>
+      </div>
+        <div class="grid-item0">
+          <a href="index.html">Back to Google Search</a>
+        </div>
+  </div>
+</body>
+</html>
