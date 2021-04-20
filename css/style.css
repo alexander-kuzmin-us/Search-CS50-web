@@ -1,21 +1,22 @@
 
 #searchInput {
-    margin-top: 12%;
-    margin-left: 30%;
     border: 2px solid rgb(201, 193, 193);
     border-radius: 20px;
-    width: 564px;
+    width: auto;
+    max-width: 564px;
+    min-width: 300px;
     height: 35px;
     font-size: 16px;
     font-family: arial,sans-serif;
 }
 
-#links {
+a {
     float: right;
-    margin-top: 5px;
-    padding: 10px;
     font-size: 13px;
     font-family: arial,sans-serif;
+    padding: 5px;
+    padding-top: 0px;
+    padding-right: 5px;
 }
 
 a:link { 
@@ -24,7 +25,7 @@ a:link {
 }
 
 a:visited { 
-    color: #000000; 
+    color: #000000;
     text-decoration: none;
 }
 
@@ -36,4 +37,32 @@ a:hover {
 a:active { 
     color: #000000; 
     text-decoration: none;
+}
+
+div {
+    border: 5px solid rgb(147, 197, 147);
+    padding: 25px;
+    margin: 10px;
+}
+
+label {
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    color: #000000;
+}
+
+#googleSearch, #lucky, #submit {
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
 }
