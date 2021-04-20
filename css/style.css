@@ -66,3 +66,8 @@ label {
     min-width: 54px;
     text-align: center;
 }
+
+.label {
+    font-size: 13px;
+    font-family: arial,sans-serif;
+}
