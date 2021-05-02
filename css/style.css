@@ -40,8 +40,13 @@ a:active {
 }
 
 div {
+    display: flex;
     padding: 25px;
     margin: 10px;
+}
+
+.header {
+    justify-content: right;
 }
 
 label {
@@ -101,3 +106,4 @@ label {
     display: table;
     margin: 0 auto;  
 }
+
