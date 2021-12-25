@@ -155,3 +155,5 @@ htmlcov/
 # Direnv
 .envrc
 .direnv
+
+_config.yml
