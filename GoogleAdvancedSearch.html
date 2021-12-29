@@ -11,25 +11,42 @@
       <a href="index.html">Back to Google Search</a>
     </header>
     <div>
-      <form id=advance action="https://www.google.com/advanced_search">
+      <p id="advanced-search-p">
+        Advanced Search
+      </p>
+      <p id="border-line">
+      </p>
+    </div>
+    <div>
+      <form class="advance" action="https://www.google.com/advanced_search">
         <fieldset>
-          <legend>Google Advanced Search</legend>
-          <label for="as_q">All these words: | Type the important words:  tricolor rat terrier |</label>
+          <legend>Find pages with...</legend>
+          <label for="as_q">All these words: </label>
           <input type="text" class="control" id="as_q" name="as_q">
+          <span class="span">Type the important words: </span>
+          <span class="span-tail">tricolor rat terrier</span>
           <br>
-          <label for="as_epq">This exact word or phrase: | Put exact words in quotes:  "rat terrier" |</label>
+          <label for="as_epq">This exact word or phrase: </label>
           <input type="text" class="control" id="as_epq" name="as_epq">
+          <span class="span">Put exact words in quotes: </span>
+          <span class="span-tail">"rat terrier"</span>
           <br>
-          <label for="as_oq">Any of these words: | Type OR between all the words you want:  miniature OR standard |</label>
+          <label for="as_oq">Any of these words: </label>
           <input type="text" class="control" id="as_oq" name="as_oq">
+          <span class="span">Type OR between all the words you want: </span>
+          <span class="span-tail">miniature OR standard</span>
           <br>
-          <label for="as_eq">None of these words: | Put a minus sign just before words you don't want:  -rodent, -"Jack Russell" |</label>
+          <label for="as_eq">None of these words: </label>
           <input type="text" class="control" id="as_eq" name="as_eq">
+          <span class="span">Put a minus sign just before words you don't want: </span>
+          <span class="span-tail"> -rodent, -"Jack Russell"</span>
           <br>
-          <button class="submit-button" type="submit" id="Advanced Search">Advanced Search</button>
+          <button class="submit-button" type="submit" id="Advanced_Search_Button">Advanced Search</button>
         </fieldset>
       </form>
     </div>
+    <p id="border-line">
+    </p>
     <footer>
       <p>Copyright &copy;2021. Created by Alex Kuzmin.</p>
     </footer>

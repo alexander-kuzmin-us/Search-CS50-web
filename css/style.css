@@ -1,27 +1,10 @@
-header {
-    padding: 25px;
-    margin: 10px;
-    justify-content: right;
-}
-
-#searchInput {
-    border: 2px solid rgb(201, 193, 193);
-    border-radius: 20px;
-    width: auto;
-    max-width: 564px;
-    min-width: 350px;
-    height: 35px;
-    font-size: 16px;
-    font-family: arial,sans-serif;
-}
-
 a {
     float: right;
     font-size: 13px;
-    font-family: arial,sans-serif;
     padding: 5px;
-    padding-top: 0px;
+    padding-top: 5px;
     padding-right: 5px;
+    margin: 5px;
 }
 
 a:link { 
@@ -44,10 +27,71 @@ a:active {
     text-decoration: none;
 }
 
-div {
-    display: flex;
-    padding: 25px;
+#advanced-search-p{
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+
+#Advanced_Search_Button {
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#Advanced_Search_Button:hover {
+    box-shadow: 1px 1px 5px rgb(201, 193, 193);
+}
+
+#border-line {
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+body {
+    font-family: Roboto, arial, sans-serif;
+}
+
+header {
+    height: 60px;
+    padding: 20px;
     margin: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#searchInput {
+    border: 1px solid rgb(201, 193, 193);
+    border-radius: 20px;
+    width: auto;
+    max-width: 582px;
+    min-width: 350px;
+    height: 35px;
+    font-size: 16px;
+}
+
+#searchInput:hover{
+    box-shadow: 1px 1px 5px rgb(201, 193, 193);
+}
+
+.span {
+    color: #666;
+    font-size: 11px;
+}
+
+.span-tail {
+    color: #666;
+    font-family: monospace;
+    font-size: 11px;
+    white-space: pre;
 }
 
 label {
@@ -64,7 +108,6 @@ label {
     border: 1px solid #f8f9fa;
     border-radius: 4px;
     color: #3c4043;
-    font-family: arial,sans-serif;
     font-size: 14px;
     margin: 11px 20px;
     padding: 0 16px;
@@ -78,11 +121,6 @@ label {
     border: 2px solid #cececf;
 }
 
-.center-container {
-    display: flex;
-    justify-content: center;
-}
-
 .control {
     margin-left: auto;
     margin-right: auto;
@@ -90,21 +128,21 @@ label {
     width: 300px;
 }
 
-#isgs {
-    margin-left: 110px;
-}
-
 footer {
     position: fixed;
-    margin-left: 20px;
+    margin: 20px;
     font-size: 13px;
-    font-family: arial,sans-serif;
     color: #000000;
     bottom: 0;
+    padding: 10px;
 }
 
-#advance {
+.advance {
     display: table;
     margin: 0 auto;  
 }
 
+.form-container {
+    padding: 20px;
+    margin: 20px;
+}
