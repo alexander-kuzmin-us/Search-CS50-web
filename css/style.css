@@ -27,21 +27,30 @@ a:active {
     text-decoration: none;
 }
 
+.advance {
+    display: grid;
+    grid-template-columns: 300px 380px 300px 300px;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: righr;
+}
+
 #advanced-search-p{
     color: #d93025;
     font-size: 20px;
-    margin: 25px 35px;
+    padding: 20px;
 }
 
 #Advanced_Search_Button {
     background-color: #4d90fe;
     border: 1px solid #3079ed;
     color: #fff;
-    border-radius: 2px;
+    border-radius: 3px;
     cursor: default;
     font-size: 11px;
     text-align: center;
     white-space: nowrap;
+    width: 200px;
 }
 
 #Advanced_Search_Button:hover {
@@ -54,6 +63,10 @@ a:active {
 
 body {
     font-family: Roboto, arial, sans-serif;
+}
+
+#find_with {
+    padding: 20px;
 }
 
 header {
@@ -135,11 +148,6 @@ footer {
     color: #000000;
     bottom: 0;
     padding: 10px;
-}
-
-.advance {
-    display: table;
-    margin: 0 auto;  
 }
 
 .form-container {
