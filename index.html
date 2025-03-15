@@ -4,27 +4,33 @@
     <meta charset="utf-8">
     <title>Google Search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Google Search clone for CS50 Web Programming project">
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header>
-      <div class="container">
-        <a href="GoogleAdvancedSearch.html">Advanced Search</a>
+      <nav class="navigation">
         <a href="GoogleImageSearch.html">Image Search</a>
-      </div>
+        <a href="GoogleAdvancedSearch.html">Advanced Search</a>
+      </nav>
     </header>
-    <div class="form-container">
-      <center>
-        <form action="https://google.com/search" enctype="application/x-www-form-urlencoded" method="GET">
-          <input id="searchInput" type="text" name="q">
-          <br>
+    <main class="search-container">
+      <div class="logo-container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" width="272" height="92">
+      </div>
+      <form action="https://google.com/search" method="GET" class="search-form">
+        <div class="search-input-container">
+          <input id="searchInput" type="text" name="q" aria-label="Search Google">
+        </div>
+        <div class="search-buttons">
           <input class="submit-button" type="submit" value="Google Search">
-          <input class="submit-button" type="button" onclick="window.location.href='https://google.com/doodles'" value="I am Feeling Lucky">
-        </form>
-      </center>
-    </div>
+          <input class="submit-button" type="submit" name="btnI" value="I'm Feeling Lucky">
+        </div>
+      </form>
+    </main>
     <footer>
-      <p>Copyright &copy;2021. Created by Alex Kuzmin.</p>
+      <p>Copyright &copy;2025. Created by Alex Kuzmin.</p>
     </footer>
   </body>
 </html>
