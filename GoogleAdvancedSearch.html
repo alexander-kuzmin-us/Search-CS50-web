@@ -4,76 +4,92 @@
     <title>Google Advanced Search</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Advanced search options for Google Search clone">
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header>
-      <a href="index.html">Back to Google Search</a>
+      <nav class="navigation">
+        <a href="index.html">Back to Google Search</a>
+      </nav>
     </header>
-    <div>
-      <p id="advanced-search-p">
-        Advanced Search
-      </p>
-      <p id="border-line">
-      </p>
-    </div>
-    <div>
-      <p id="find_with">Find pages with...</p>
-      <form class="advance" action="https://www.google.com/advanced_search">
-        <div clas="form_element">
-          <label for="as_q">All these words: </label>
-        </div>
-        <div clas="form_element">
-          <input type="text" class="control" id="as_q" name="as_q">
-        </div>
-        <div clas="form_element">
-          <span class="span">Type the important words: </span>
-        </div>
-        <div clas="form_element">
-          <span class="span-tail">tricolor rat terrier</span>
-        </div>
-        <div clas="form_element">
-          <label for="as_epq">This exact word or phrase: </label>
-        </div>
-        <div clas="form_element">
-          <input type="text" class="control" id="as_epq" name="as_epq">
-        </div>
-        <div clas="form_element">
-          <span class="span">Put exact words in quotes: </span>
-        </div>
-        <div clas="form_element">
-          <span class="span-tail">"rat terrier"</span>
-        </div>
-        <div clas="form_element">
-          <label for="as_oq">Any of these words: </label>
-        </div>
-        <div clas="form_element">
-          <input type="text" class="control" id="as_oq" name="as_oq">
-        </div>
-        <div clas="form_element">
-          <span class="span">Type OR between all the words you want: </span>
-        </div>
-        <div clas="form_element">
-          <span class="span-tail">miniature OR standard</span>
-        </div>
-        <div clas="form_element">
-          <label for="as_eq">None of these words: </label>
-        </div>
-        <div clas="form_element">
-          <input type="text" class="control" id="as_eq" name="as_eq">
-        </div>
-        <div clas="form_element">
-          <span class="span">Put a minus sign just before words you don't want: </span>
-        </div>
-        <div clas="form_element">
-          <span class="span-tail"> -rodent, -"Jack Russell"</span>
-        </div>
-        <button class="submit-button" type="submit" id="Advanced_Search_Button">Advanced Search</button>
-    </div>
-    <p id="border-line">
-    </p>
+    <main>
+      <div class="advanced-search-header">
+        <h1 class="advanced-search-title">Advanced Search</h1>
+        <div class="divider"></div>
+      </div>
+      <div class="advanced-search-content">
+        <h2 class="find-pages-heading">Find pages with...</h2>
+        <form class="advanced-form" action="https://google.com/search" method="GET">
+          <div class="form-row">
+            <div class="form-label">
+              <label for="as_q">All these words:</label>
+            </div>
+            <div class="form-input">
+              <input type="text" class="control" id="as_q" name="as_q">
+            </div>
+            <div class="form-hint">
+              <span class="hint-text">Type the important words:</span>
+            </div>
+            <div class="form-example">
+              <span class="example-text">tricolor rat terrier</span>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-label">
+              <label for="as_epq">This exact word or phrase:</label>
+            </div>
+            <div class="form-input">
+              <input type="text" class="control" id="as_epq" name="as_epq">
+            </div>
+            <div class="form-hint">
+              <span class="hint-text">Put exact words in quotes:</span>
+            </div>
+            <div class="form-example">
+              <span class="example-text">"rat terrier"</span>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-label">
+              <label for="as_oq">Any of these words:</label>
+            </div>
+            <div class="form-input">
+              <input type="text" class="control" id="as_oq" name="as_oq">
+            </div>
+            <div class="form-hint">
+              <span class="hint-text">Type OR between all the words you want:</span>
+            </div>
+            <div class="form-example">
+              <span class="example-text">miniature OR standard</span>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-label">
+              <label for="as_eq">None of these words:</label>
+            </div>
+            <div class="form-input">
+              <input type="text" class="control" id="as_eq" name="as_eq">
+            </div>
+            <div class="form-hint">
+              <span class="hint-text">Put a minus sign just before words you don't want:</span>
+            </div>
+            <div class="form-example">
+              <span class="example-text">-rodent, -"Jack Russell"</span>
+            </div>
+          </div>
+          
+          <div class="advanced-submit-container">
+            <button class="advanced-submit-button" type="submit">Advanced Search</button>
+          </div>
+        </form>
+      </div>
+    </main>
     <footer>
-      <p>Copyright &copy;2021. Created by Alex Kuzmin.</p>
+      <p>Copyright &copy;2025. Created by Alex Kuzmin.</p>
     </footer>
   </body>
 </html>
